@@ -78,6 +78,7 @@ app.use("/test-chat", testSocketChatRouter);
         lo recive, lo guarda en el array y lo manda a todos los front y el front lo muestra en ka consola.
 
     4) Hacemos el deploy en Glitch con la opcion importar el proyecto desde Github.    
+        Para hacer el deploy hay que especificar la version de node, "engines": {"node": "16.x"}
         */
 
 // Ahora guardamos nuestro servidor HTTP en una variable
