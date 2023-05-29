@@ -1,0 +1,21 @@
+{{!-- Ej-2 --}}
+<div>
+    <h1> Hola Pet {{usuario.name}} la edad es{{usuario.edad}} </h1>     {{!-- Las variables en doble llave "{{}}" las atrapa solo el programa, cunado le pasamos en la app. el res.render() --}}
+    {{!--  Le tenemos que especificicar que objeto hace referencia, si usuario o usuarios, ya que ambos tiene las propiedades edad y name. --}}
+
+{{!-- Preguntamos si la variable isAdmin es true, si lo es recorremos el array y mostramos los usuarios --}}
+{{#if usuario.isAdmin}}     
+    Si es Admin
+
+    <h3>Es Administrador</h3>
+        
+    <h4>Listado de Usuarios</h4>
+    {{#each usuarios}}
+        <div>
+            <p>Hola el nombre {{this.name}} !! tu edad es {{this.edad}} </p>
+        </div>
+    {{/each}}
+{{else}}
+    No es Admin
+{{/if}}    
+</div>

@@ -1,0 +1,20 @@
+{{!-- Este HTML se usa para todas las plantillas como base  --}}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/main.css">
+    <title>Motor de Plantilla Handlebars (Sin API)</title>
+</head>
+<body>
+    {{{body}}}      {{!-- cada vista de views que vayamos a renderizar, se renderizará dentro de este body. De esta
+                        manera, no tenemos que escribir una estructura html completa por cada vista que queramos trabajar. --}}
+   
+    {{name}}        {{!-- Las varibales vam entre doble llaves. --}}
+
+</body>
+    <script src="http://localhost:3000/main.js"></script>
+</html>
