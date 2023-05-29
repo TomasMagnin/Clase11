@@ -9,6 +9,8 @@ import path from "path";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";                  // Importamos el servidor Socket.
 
+/* El scrip para desarrollar es el DEV y el START es para el deply */
+
 // PARA INSTALAR HANDLEBAR ES NPM I EXPRESS-HANDLEBARS
 // Para INSTALAR SOCKET ES NPM I SOCKET.IO
 
@@ -79,6 +81,7 @@ app.use("/test-chat", testSocketChatRouter);
 
     4) Hacemos el deploy en Glitch con la opcion importar el proyecto desde Github.    
         Para hacer el deploy hay que especificar la version de node, "engines": {"node": "16.x"}
+        https://brash-spectacular-divan.glitch.me/test-chat
         */
 
 // Ahora guardamos nuestro servidor HTTP en una variable
